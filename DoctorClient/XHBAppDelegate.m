@@ -7,12 +7,33 @@
 //
 
 #import "XHBAppDelegate.h"
-
+#import "XiaoMaClient.h"
+#import "XHBTalkData.h"
+#import "NetworkUtil.h"
+#import "XHBTestViewController.h"
+#import "XHBTalkTransfersCenter.h"
 @implementation XHBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [XiaoMaClient
+     registeriOSClient:@"AndriodCientAppKey"
+     appSecret:@"AndriodCientSecret"
+     apiUrl:@"http://ejt.s2.c2d.me/api.ashx"];
+    [[NetworkUtil shareUtil]startNotification];
+    [[XHBDBHelper shareDBHelper] updateToDB:[XHBTalkData class] set:[NSString stringWithFormat:@"status=3"] where:[NSString stringWithFormat:@"status=1"]];
+    [[XHBTalkTransfersCenter shareCenter]  connectToServer:@"13000000000@115.29.165.247" password:@"123" host:@"115.29.165.247"];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [[XHBDBHelper shareDBHelper] createTableWithModelClass:[XHBTalkData class]];
+    XHBTestViewController * controller=[[XHBTestViewController alloc]initWithNibName:@"XHBTestViewController" bundle:[NSBundle mainBundle]];
+    
+    UINavigationController * nav=[[UINavigationController alloc]initWithRootViewController:controller];
+    [self.window setRootViewController:nav];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

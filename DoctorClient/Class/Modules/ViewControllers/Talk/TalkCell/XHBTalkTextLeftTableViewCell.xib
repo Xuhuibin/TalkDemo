@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XHBTalkTextLeftTableViewCell+1" id="fIr-7x-Omf" customClass="XHBTalkTextTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fIr-7x-Omf" id="8DG-n8-NmP">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5月3日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="brb-Fm-ziz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="BrC-lP-rV8">
+                        <rect key="frame" x="5" y="30" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="Noc-FV-kiP">
+                        <rect key="frame" x="50" y="30" width="230" height="110"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverTextNodeBkg.png" id="SPi-QG-JgL">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="110"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.29999999999999999" y="0.59999999999999964" width="0.5" height="0.10000000000000001"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Snp-qo-JqB" customClass="HBCoreLabel">
+                                <rect key="frame" x="18" y="10" width="200" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="Noc-FV-kiP" id="Ouc-ih-dZ7"/>
+                <outlet property="content" destination="Snp-qo-JqB" id="ld0-aa-Ljh"/>
+                <outlet property="mlogo" destination="BrC-lP-rV8" id="K8u-kp-JfB"/>
+                <outlet property="time" destination="brb-Fm-ziz" id="vYF-UU-in5"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XHBTalkTextLeftTableViewCell+0" rowHeight="121" id="vxv-cB-LA2" customClass="XHBTalkTextTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vxv-cB-LA2" id="YuH-LA-OSC">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="fUZ-Od-wWO">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="cCx-S0-49y">
+                        <rect key="frame" x="50" y="5" width="230" height="110"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverTextNodeBkg.png" id="zUa-Sn-hui">
+                                <rect key="frame" x="0.0" y="0.0" width="230" height="110"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.29999999999999999" y="0.59999999999999964" width="0.5" height="0.10000000000000001"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="niH-3z-xeC" customClass="HBCoreLabel">
+                                <rect key="frame" x="18" y="10" width="200" height="90"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="cCx-S0-49y" id="8ef-3e-McL"/>
+                <outlet property="content" destination="niH-3z-xeC" id="Gjy-u7-24t"/>
+                <outlet property="mlogo" destination="fUZ-Od-wWO" id="jKs-5C-TOf"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ReceiverTextNodeBkg.png" width="56" height="41"/>
+    </resources>
+</document>

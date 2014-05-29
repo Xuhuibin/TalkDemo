@@ -6,11 +6,22 @@
 
 #import <Availability.h>
 
+#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif
 
+#define NSLocalStringForKey(key) \
+[[[NSBundle mainBundle] localizedInfoDictionary] objectForKey:key]
+
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
+    #import "NSStrUtil.h"
+    #import "XHBDBHelper.h"
+    #import "NSMutableThreadSafeArray.h"
+    #import "NSMutableThreadSafeString.h"
+    #import "NSGCDThread.h"
+    #import "UIView+Global.h"
 #endif

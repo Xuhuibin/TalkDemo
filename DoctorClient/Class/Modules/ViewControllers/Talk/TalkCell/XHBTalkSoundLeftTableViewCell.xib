@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XHBTalkSoundLeftTableViewCell+1" rowHeight="75" id="MPm-Ei-f9V" customClass="XHBTalkSoundTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MPm-Ei-f9V" id="ur0-F3-Dq8">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5月3日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WPU-2x-ev3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="cY2-LV-hHk">
+                        <rect key="frame" x="5" y="30" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="Tdb-62-c8u">
+                        <rect key="frame" x="50" y="30" width="100" height="41"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverTextNodeBkg.png" id="Se1-Ku-8ch">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.29999999999999999" y="0.59999999999999964" width="0.5" height="0.10000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverVoiceNodePlaying.png" id="mS2-Vf-dj6">
+                                <rect key="frame" x="25" y="10" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="pcb-GQ-Evd">
+                                <rect key="frame" x="25" y="10" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xCx-Vw-9Gn">
+                                <rect key="frame" x="55" y="10" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="Tdb-62-c8u" id="Hz6-mS-MzR"/>
+                <outlet property="mlogo" destination="cY2-LV-hHk" id="69t-dJ-E2x"/>
+                <outlet property="playTime" destination="xCx-Vw-9Gn" id="Uzc-on-sWJ"/>
+                <outlet property="time" destination="WPU-2x-ev3" id="ih1-j1-D6K"/>
+                <outlet property="voice" destination="mS2-Vf-dj6" id="cqE-Vj-WEb"/>
+                <outlet property="voiceAnimation" destination="pcb-GQ-Evd" id="CvT-VD-K12"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XHBTalkSoundLeftTableViewCell+0" rowHeight="50" id="v5A-EY-eKY" customClass="XHBTalkSoundTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v5A-EY-eKY" id="GCC-YV-8QJ">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="rpR-i8-7SC">
+                        <rect key="frame" x="5" y="5" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" id="Z90-rw-Jlh">
+                        <rect key="frame" x="50" y="5" width="100" height="39"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverTextNodeBkg.png" id="88n-nr-cXD">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="39"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.29999999999999999" y="0.59999999999999964" width="0.5" height="0.10000000000000001"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ReceiverVoiceNodePlaying.png" id="DrA-kK-BUB">
+                                <rect key="frame" x="25" y="9" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6J0-3P-fCP">
+                                <rect key="frame" x="25" y="9" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g4x-If-6K3">
+                                <rect key="frame" x="55" y="9" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="Z90-rw-Jlh" id="Esj-6D-HtP"/>
+                <outlet property="mlogo" destination="rpR-i8-7SC" id="5Va-RM-XwV"/>
+                <outlet property="playTime" destination="g4x-If-6K3" id="O6V-M9-s7B"/>
+                <outlet property="voice" destination="DrA-kK-BUB" id="Zg4-hB-8pZ"/>
+                <outlet property="voiceAnimation" destination="6J0-3P-fCP" id="XwP-ta-qzL"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ReceiverTextNodeBkg.png" width="56" height="41"/>
+        <image name="ReceiverVoiceNodePlaying.png" width="20" height="20"/>
+    </resources>
+</document>

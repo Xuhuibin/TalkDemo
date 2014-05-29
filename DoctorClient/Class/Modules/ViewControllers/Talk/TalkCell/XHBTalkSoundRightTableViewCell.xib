@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XHBTalkSoundRightTableViewCell+1" rowHeight="75" id="Jfw-NF-lAX" customClass="XHBTalkSoundTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jfw-NF-lAX" id="Zpg-Kt-Ioc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J9w-zF-ObG">
+                        <rect key="frame" x="142" y="40" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="msg_state_fail_resend.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="uploadFailedAction:" destination="Jfw-NF-lAX" eventType="touchUpInside" id="0Iu-Vx-rcX"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GvL-fn-0Pm">
+                        <rect key="frame" x="275" y="30" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5月3日" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4l-PM-Jtd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Js4-3b-bKp">
+                        <rect key="frame" x="142" y="40" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0zh-a4-Dbj">
+                        <rect key="frame" x="170" y="30" width="100" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SenderTextNodeBkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rpE-1G-ipG">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="41"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.15000000000000002" y="0.69999999999999973" width="0.0" height="0.10000000000000002"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SenderVoiceNodePlaying.png" translatesAutoresizingMaskIntoConstraints="NO" id="VcL-fW-YmE">
+                                <rect key="frame" x="50" y="10" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SqA-Qs-P1e">
+                                <rect key="frame" x="50" y="10" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIv-5E-VR4">
+                                <rect key="frame" x="15" y="10" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4z-ld-CKo">
+                        <rect key="frame" x="133" y="41" width="30" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已达" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ual-kZ-F3T">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="0zh-a4-Dbj" id="nuy-q8-0RZ"/>
+                <outlet property="btnFailed" destination="J9w-zF-ObG" id="Bck-ut-rxH"/>
+                <outlet property="indicator" destination="Js4-3b-bKp" id="zQu-2D-0IM"/>
+                <outlet property="mlogo" destination="GvL-fn-0Pm" id="Iej-bj-YSP"/>
+                <outlet property="playTime" destination="sIv-5E-VR4" id="0Ng-AN-CGK"/>
+                <outlet property="receipts" destination="Ual-kZ-F3T" id="fYE-Ij-4UF"/>
+                <outlet property="receiptsView" destination="y4z-ld-CKo" id="DLF-Yl-tvL"/>
+                <outlet property="time" destination="X4l-PM-Jtd" id="W1J-4s-YqV"/>
+                <outlet property="voice" destination="VcL-fW-YmE" id="gNA-Zw-Rb4"/>
+                <outlet property="voiceAnimation" destination="SqA-Qs-P1e" id="tyo-28-dgF"/>
+            </connections>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="XHBTalkSoundRightTableViewCell+0" rowHeight="50" id="pTh-zq-7ft" customClass="XHBTalkSoundTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pTh-zq-7ft" id="vgy-Du-igh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aM-V8-3Q2">
+                        <rect key="frame" x="142" y="15" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" image="msg_state_fail_resend.png">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="uploadFailedAction:" destination="pTh-zq-7ft" eventType="touchUpInside" id="seo-RD-Wxp"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0q8-8W-bWq">
+                        <rect key="frame" x="275" y="5" width="40" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ZcS-P2-FK3">
+                        <rect key="frame" x="142" y="15" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </activityIndicatorView>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9EN-et-eMW">
+                        <rect key="frame" x="170" y="5" width="100" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SenderTextNodeBkg.png" translatesAutoresizingMaskIntoConstraints="NO" id="dQy-af-s0C">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <rect key="contentStretch" x="0.15000000000000002" y="0.69999999999999973" width="0.0" height="0.10000000000000002"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2S" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ES-V8-bSZ">
+                                <rect key="frame" x="15" y="10" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SenderVoiceNodePlaying.png" translatesAutoresizingMaskIntoConstraints="NO" id="lf7-V2-ymh">
+                                <rect key="frame" x="50" y="10" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dao-9n-Q0T">
+                                <rect key="frame" x="50" y="10" width="20" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G5U-Qe-8be">
+                        <rect key="frame" x="133" y="16" width="30" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="已达" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bus-Tv-tXF">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="9EN-et-eMW" id="IO5-HR-adx"/>
+                <outlet property="btnFailed" destination="1aM-V8-3Q2" id="1Ra-Zx-Nqg"/>
+                <outlet property="indicator" destination="ZcS-P2-FK3" id="9bb-ec-OYu"/>
+                <outlet property="mlogo" destination="0q8-8W-bWq" id="Iei-qi-QDo"/>
+                <outlet property="playTime" destination="0ES-V8-bSZ" id="QGG-on-HxO"/>
+                <outlet property="receipts" destination="Bus-Tv-tXF" id="jFk-fV-KIg"/>
+                <outlet property="receiptsView" destination="G5U-Qe-8be" id="agM-JS-ZOJ"/>
+                <outlet property="voice" destination="lf7-V2-ymh" id="ggO-ua-l6C"/>
+                <outlet property="voiceAnimation" destination="dao-9n-Q0T" id="72t-OQ-o5x"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="SenderTextNodeBkg.png" width="56" height="41"/>
+        <image name="SenderVoiceNodePlaying.png" width="20" height="20"/>
+        <image name="msg_state_fail_resend.png" width="44" height="44"/>
+    </resources>
+</document>

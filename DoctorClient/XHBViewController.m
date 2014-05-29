@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSMutableArray * array=[NSMutableArray array];
+    for (int i=0; i<10000; i++) {
+        [array addObject:[NSString stringWithFormat:@"%d  ",i]];
+
+    }
 }
 
 - (void)didReceiveMemoryWarning
